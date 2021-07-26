@@ -1,0 +1,101 @@
+
+{% extends 'app/base.html' %}
+{% load static %}
+{% block contenido %}
+<h1 id="titulos"><img src="{% static 'app/dist/img/Logo Inicio.png' %}" alt="logo"></h1>
+
+<div id="demo" class="carousel slide" data-ride="carousel">
+
+    <!-- Indicators -->
+    <ul class="carousel-indicators">
+      <li data-target="#demo" data-slide-to="0" class="active"></li>
+      <li data-target="#demo" data-slide-to="1"></li>
+      <li data-target="#demo" data-slide-to="2"></li>
+    </ul>
+  
+    <!-- The slideshow -->
+    <div class="carousel-inner" id="carusele">
+      <div class="carousel-item active">
+        <img src="{% static 'app/dist/img/catalogo carusel 1.jpg' %}" alt="Los Angeles">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'app/dist/img/imagenes carrusel 1.jpg' %}" alt="Chicago">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'app/dist/img/imagenes carrusel 2.jpg' %}" alt="Chicago">
+      </div>
+    </div>
+  
+    <!-- Left and right controls -->
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+  
+  </div>
+<br><br><br>
+
+<h1 id="titulos"><img src="{% static 'app/dist/img/comentarios.png' %}" alt="comw"></h1>
+<div class="container mt-3">
+    <div class="media border p-3">
+      <div class="media-body">
+        <h4>Maria Antonieta <small><i>Posteo en febrero 19, 2019</i></small></h4>
+        <p>Una Excelente pagina, muy respetuosos y atentos.</p>      
+      </div>
+      <img src="{% static 'app/dist/img/user.png' %}" alt="John Doe" class="ml-3 mt-3 rounded-circle" style="width:60px;">
+    </div>
+  </div>
+  <div class="container mt-3">
+    <div class="media border p-3">
+      <div class="media-body">
+        <h4>Elon Musk <small><i>Posteo en mayo 18, 2019</i></small></h4>
+        <p>Una muy buena calidad de pagina, productos a tiempo, muy buena atención.</p>      
+      </div>
+      <img src="{% static 'app/dist/img/user.png' %}" alt="John Doe" class="ml-3 mt-3 rounded-circle" style="width:60px;">
+    </div>
+  </div>
+  <div class="container mt-3">
+    <div class="media border p-3">
+      <div class="media-body">
+        <h4>Tom Holland <small><i>Posteo en mayo 21, 2019</i></small></h4>
+        <p>Exelentes productos, muy buena calidad por sobre todo.</p>      
+      </div>
+      <img src="{% static 'app/dist/img/user.png' %}" alt="John Doe" class="ml-3 mt-3 rounded-circle" style="width:60px;">
+    </div>
+  </div>
+  <div class="container mt-3">
+    <div class="media border p-3">
+      <div class="media-body">
+        <h4>Geralt de Rivia <small><i>Posteo en mayo 26, 2019</i></small></h4>
+        <p>Tienda en la cual se desempeña por su excelencia, muy satisfecho con las compras.</p>      
+      </div>
+      <img src="{% static 'app/dist/img/user.png' %}" alt="John Doe" class="ml-3 mt-3 rounded-circle" style="width:60px;">
+    </div>
+  </div>
+  <div class="container mt-3">
+    <div class="media border p-3">
+      <div class="media-body">
+        <h4>Mario Auditore <small><i>Posteo en junio 02, 2019</i></small></h4>
+        <p>Personas muy amables a la hora de responder las dudas que se nos generan, como ayuda de cual producto es mejor, entre otros..</p>      
+      </div>
+      <img src="{% static 'app/dist/img/user.png' %}" alt="John Doe" class="ml-3 mt-3 rounded-circle" style="width:60px;">
+    </div>
+  </div>
+  <div class="container mt-3">
+    <div class="media border p-3">
+      <div class="media-body">
+        <h4>Ezio Auditore <small><i>Posteo en junio 13, 2019</i></small></h4>
+        <p>Nada que decir, la mejor pagina de mascotas en la cual he comprado.</p>      
+      </div>
+      <img src="{% static 'app/dist/img/user.png' %}" alt="John Doe" class="ml-3 mt-3 rounded-circle" style="width:60px;">
+    </div>
+  </div>
+  <br><br><br><br>
+  
+  <h1 id="titulos"><img src="{% static 'app/dist/img/catalogo carusel 2.jpg' %}" alt="logo"></h1>
+  <br><br>
+  
+
+{% endblock %}

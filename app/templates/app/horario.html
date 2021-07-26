@@ -1,0 +1,72 @@
+{% extends 'app/base.html' %}
+{% load static %}
+
+{% block contenido %}
+
+  <br><br><br>
+  <h1 id="titulos"><img src="{% static 'app/dist/img/horarios.png' %}" alt="logo"></h1>
+  <br><br><br>
+  
+  <div class="container" id="tablahorario">
+    <h2></h2>
+    <p></p>
+    <table class="table" id="tablahorario">
+      <thead class="thead-dark">
+        <tr>
+          <th>Días de Semana</th>
+          <th>Dirección de Local</th>
+          <th>Horarios</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong> Lunes </strong></td>
+          <td><strong>[Sucursal de Nuñoa/Sucursal de Santiago Centro]</strong></td>
+          <td><strong>(08:30hr - 18:30hr) Execpto Feriados</strong></td>
+        </tr>
+        <tr>
+          <td><strong> Martes </strong></td>
+          <td><strong>[Sucursal de Nuñoa/Sucursal de Santiago Centro]</strong></td>
+          <td><strong>(08:30hr - 18:30hr) Execpto Feriados</strong></td>
+        </tr>
+        <tr>
+          <td><strong>  Miercoles</strong></td>
+          <td><strong>[Sucursal de Nuñoa/Sucursal de Santiago Centro]</strong></td>
+          <td><strong>(08:30hr - 18:30hr) Execpto Feriados</strong></td>
+        </tr>
+        <tr>
+            <td><strong>  Jueves</strong></td>
+            <td><strong>[Sucursal de Nuñoa/Sucursal de Santiago Centro]</strong></td>
+            <td><strong>(08:30hr - 18:30hr) Execpto Feriados</strong></td>
+        </tr>
+        <tr>
+            <td><strong>  Viernes</strong></td>
+            <td><strong>[Sucursal de Nuñoa/Sucursal de Santiago Centro]</strong></td>
+            <td><strong>(08:30hr - 18:30hr) Execpto Feriados</strong></td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="table" id="tablahorario">
+      <thead class="thead-dark">
+        <tr>
+          <th>Fin de semana</th>
+          <th>Dirección de Local</th>
+          <th>Horarios</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>  Sabado</strong></td>
+          <td><strong>[Sucursal de Nuñoa/Sucursal de Santiago Centro]</strong></td>
+          <td><strong>(08:30hr - 14:00hr) Execpto Feriados</strong></td>
+        </tr>
+        <tr>
+          <td><strong>  Domingo</strong></td>
+          <td><strong>[Sucursal de Nuñoa/Sucursal de Santiago Centro]</strong></td>
+          <td><strong>(08:30hr - 14:00hr) Execpto Feriados</strong></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+<br><br><br>
+{% endblock %}

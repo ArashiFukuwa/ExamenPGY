@@ -1,0 +1,24 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% block contenido %}
+
+<h1 id="titulos"><h1 id="titulos"><img src="{% static 'app/dist/img/registrar.png' %}" alt="logo"></h1></h1>
+<br><br>
+<div class="row">
+    <div class="col-sm-2"></div>
+    <div class="card col-sm-8">
+        <form action="" method="POST">
+            {% csrf_token %}
+            <Table>
+                {{ form|crispy }}
+            </Table>
+            &emsp;&emsp;<input type="submit" class="btn btn-success" value="Registrarse">
+            &emsp;&emsp;<input type="reset" class="btn btn-danger" value="Limpiar">
+        </form>
+    </div>
+    <div class="col-sm-2"></div> 
+</div>
+<br><br><br>
+
+{% endblock %}

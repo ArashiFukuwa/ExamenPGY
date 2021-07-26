@@ -1,0 +1,54 @@
+
+{% extends 'app/base.html' %}
+{% load static %}
+
+
+{% block contenido %}
+
+<h1 id="titulos"><img src="{% static 'app/dist/img/producto-logo.png' %}" alt="logo"></h1>
+<br><br>
+
+          <div class="row col-sm-12 col-sm-6">
+          {% for aux in listasProductos %} 
+          <div class="card" style="width:400px">
+               {% if aux.imagen %}
+               <img src="{{ aux.imagen.url }}" alt="" width="370" height="370">
+               {% else %}
+               <img src="{% static 'app/dist/img/Sin-imagen.png' %}" alt="" width="370" height="370">
+               {% endif %}
+            <div class="card-body">
+              <p class="card-title">Nombre: {{ aux.nombre }}</p>
+              <p class="card-text">Descripcion: {{ aux.descripcion }}</p>
+              <p class="card-text">Precio: ${{ aux.precio }}</p>
+              
+              <p class="card-text">Oferta: ${{ aux.oferta }}</p>
+
+              <p class="card-text">Tipo: {{ aux.tipo }}</p>
+              <p class="card-text">Fecha: {{ aux.fecha }}</p>
+              {% if perms.app.change_producto %}
+              <a href="{% url 'modificar_producto' aux.id %}" class="btn btn-info" >Modificar</a>
+              {% endif %}
+              {% if perms.app.delete_producto %}
+              <a onclick="confirmarDelete({{ aux.id }})" class="btn btn-danger">Eliminar</a>
+              {% endif %}
+              {% if user.is_authenticated %}
+              <a onclick="" class="btn btn-danger">Comprar</a>
+              {% endif %}
+            </div>
+          </div>
+          <br>
+          {% endfor %}
+          </div>
+        {% include 'app/paginator.html' %}
+        <br><br>
+
+{% endblock %}
+
+
+{% block javascript %}
+
+<script src="{% static 'app/dist/js/funcionalidades.js' %}"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+{% endblock %}
+

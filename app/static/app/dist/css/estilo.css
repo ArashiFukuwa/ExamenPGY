@@ -1,0 +1,57 @@
+#animation{
+    transition: 5s;
+}
+
+#body{
+    background-color: #f8eded;
+}
+#nabvar{
+    background-color: #caf7e3;
+}
+.sidebar{
+    background-color: #f6dfeb;
+    color: black;
+}
+
+#texto{
+    color: black;
+    letter-spacing: 2px;
+}
+
+#logo{
+    background-color: #f6dfeb;
+    
+}
+
+
+#titulos{
+    text-align: center;
+    word-spacing: 10px;
+    
+}
+
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: salmon;
+    border-radius: 20px;
+    
+  }
+
+#nab{
+    text-align: center;
+    
+}
+
+.contenidos {
+    text-align: center;
+}
+
+#carusele{
+    padding: auto;
+    border-radius: 40px;
+    margin: auto;
+    
+}

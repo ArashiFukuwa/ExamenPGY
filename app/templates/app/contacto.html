@@ -1,0 +1,58 @@
+{% extends 'app/base.html' %}
+{% load static %}
+
+{% block contenido %}
+<h1 id="titulos"><img src="{% static 'app/dist/img/contacto.png' %}" alt="logo"></h1>
+<div class="card " id="titulos">
+    <h2>¡Redes Sociales!</h2>
+    <p>¡Comunicate con nosotros mediante nuestras redes sociales para mayor informacion!</p>            
+    <table class="table" id="titulos">
+      <thead>
+        <tr>
+          <th>Facebook</th>
+          <th>Instagram</th>
+          <th>Email</th>
+          <th>WhatsApp</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><a href="https://www.facebook.com/clubdeperrosygatos" class="d-block"><b id="texto"><img src="{% static 'app/dist/img/facebook.png' %}" alt="logo"><br>Tienda de Animalitos</b></a></td>
+          <td><a href="https://www.instagram.com/clubdeperrosygatos.cl/"  class="d-block"><b id="texto"><img src="{% static 'app/dist/img/instagram.png' %}" alt="logo"><br>Tienda de Animalitos</b></a></td>
+          <td><b id="texto"><img src="{% static 'app/dist/img/gmail.png' %}" alt="logo"><br>(cat.animales@gmail.com)</b></a></td>
+          <td><a href="https://api.whatsapp.com/send?phone=56994888066&text=Bienvenido%20a%20nuestra%20pagina%2C%20cualquier%20duda%20o%20consulta%20dejanos%20saber.%F0%9F%98%84"  class="d-block"><b id="texto"><img src="{% static 'app/dist/img/whatsapp.png' %}" alt="logo"><br>Tienda de Animalitos</b></a></td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <br><br><br>
+  <h1 id="titulos"><img src="{% static 'app/dist/img/direccion.png' %}" alt="logo"></h1>
+  <br><br><br>
+  <div class="container" id="tablahorario">
+    <h2></h2>
+    <p></p>
+    <table class="table" id="tablahorario">
+      <thead class="thead-dark">
+        <tr>
+          <th>Nombre de Tienda</th>
+          <th>Dirección de Local</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong> Tienda de Mascotas </strong></td>
+          <td><strong><li><a class="black-text text-lighten-3" href="https://www.google.com/maps/place/Club+de+Perros+y+Gatos+Avenida+Ossa/@-33.4411985,-70.5752535,17z/data=!3m1!4b1!4m5!3m4!1s0x9662cf5955d54bb5:0xe81da5b4c2872e13!8m2!3d-33.4412069!4d-70.5730974">Avenida Ossa 1400, local 3, Metro Príncipe de Gales, Ñuñoa</a></li></strong></td>
+          <td><strong>¡Disfruta tu Compra!</strong></td>
+        </tr>
+        <tr>
+          <td><strong> Tienda de Mascotas </strong></td>
+          <td><strong><li><a class="black-text text-lighten-3" href="https://www.google.com/maps/place/Club+de+Perros+y+Gatos+Tienda+Mac+Iver/@-33.4372968,-70.6494392,17z/data=!3m1!4b1!4m5!3m4!1s0x9662c5aaa5b7163f:0x20bdaf3bf8e60dc1!8m2!3d-33.4373013!4d-70.6472505">Mac Iver 468, Esquina Monjitas, Metro Bellas Artes o Plaza de Armas, Santiago Centro.</a></li></strong></td>
+          <td><strong>¡Disfruta tu Compra!</strong></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+<br><br><br>
+{% endblock %}
